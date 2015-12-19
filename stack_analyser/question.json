@@ -1,0 +1,14 @@
+{
+  "view_count": 36,
+  "title": "can't add array of strings with concat",
+  "timestamp": "2015-11-17 03:44:38Z",
+  "tags": [
+    "javascript",
+    "node.js",
+    "express"
+  ],
+  "answer_count": 1,
+  "summary": "\r\n            I am trying to add some html tags and list as a string to var in javascript. So that I can replace later that code in html. \n\napp.use('/index', function(req, res) {\n  var query = req.query;\n  var ...\r\n        ",
+  "vote_count": 1
+}
+

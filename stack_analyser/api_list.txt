@@ -1,0 +1,53 @@
+API需求列表
+
+1.热门分析
+
+1.1查询最热门标签列表
+参数：
+    top int 前几条
+    period string 统计周期（day, week, month, year, total）
+响应:
+    标签列表（标签名，标签下问题数，标签stackoverflow链接，占比）
+
+1.2查询标签趋势列表
+参数：
+    top int
+    period string 间隔周期（day, week, month, year, total）
+响应：
+    标签列表，列表里的每一项是一个(time, ques_count)数组
+
+1.3查询总问题数
+
+1.4查询今日新增问题
+
+1.5查询今日新增标签
+
+2.自定义分析
+
+2.1查询话题趋势
+参数：
+    tag_list 数组 自定义的标签列表
+    start_date date 开始时间
+    end_date date 结束时间
+响应：
+    标签列表，列表里的每一项是一个(time, ques_count)数组
+
+2.2查询标签占比
+参数：
+    tag_list 数组 自定义的标签列表
+    start_date date 开始时间
+    end_date date 结束时间
+响应：
+    标签列表（标签名，标签下问题数，标签stackoverflow链接，占比）
+
+2.2搜索标签
+参数：
+    keyword string 关键字
+响应：
+    标签列表（标签名，标签id）
+
+2.3  单个标签信息
+参数：
+    tag_id
+响应：
+    标签信息（标签名，标签下问题数，标签stackoverflow链接，占比）

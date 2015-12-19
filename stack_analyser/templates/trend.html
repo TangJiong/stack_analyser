@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>StackAnalyser</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
+    <link href="../static/css/main.css" rel="stylesheet">
+</head>
+<body>
+{% include 'nav.html' %}
+<div class="container-fluid">
+    {% include 'modal.html' %}
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <li class="disabled"><a href="#">Top Analysis</a></li>
+                <li><a href="index.html">Overview</a></li>
+                <li><a href="shares.html">Top Shares</a></li>
+                <li class="active"><a href="trend.html">Top Trend</a></li>
+            </ul>
+            <ul class="nav nav-sidebar">
+                <li class="disabled"><a href="#">Custom Analysis</a></li>
+                <li><a href="customtrend.html">Custom Trend</a></li>
+                <li><a href="customshares.html">Custom Shares</a></li>
+                <li><a href="customquery.html">CUstom Query</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <h1 class="page-header">Trend - Top Topics</h1>
+                        <div class="row">
+                <div class="col-md-9">
+                    <ul class="nav nav-tabs">
+                        <li role="presentation" class="active"><a href="#">Day</a></li>
+                        <li role="presentation"><a href="#">Month</a></li>
+                        <li role="presentation"><a href="#">Year</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <div class="inline">
+                        <a class="dropdown">
+                            <a class="btn btn-default dropdown-toggle" type="button" id="select_recent" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Recent <span class="select-recent">7</span> <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu select-recent" aria-labelledby="select_recent">
+                                <li><a href="#">Recent <span>7</span></a></li>
+                                <li><a href="#">Recent <span>12</span></a></li>
+                                <li><a href="#">Recent <span>20</span></a></li>
+                                <li><a href="#">Recent <span>30</span></a></li>
+                            </ul>
+                        </a>
+                    </div>
+                    <div class="inline">
+                        <a class="dropdown">
+                            <a class="btn btn-default dropdown-toggle" type="button" id="select_top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Top <span class="select-top">3</span> <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu select-top" aria-labelledby="select_top">
+                                <li><a href="#">Top <span>3</span></a></li>
+                                <li><a href="#">Top <span>5</span></a></li>
+                                <li><a href="#">Top <span>8</span></a></li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="toptrend" style="width: 90%"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="../static/js/jquery-2.1.4.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="../static/js/highcharts.js"></script>
+<script src="../static/js/trend.js"></script>
+</body>
+</html>
