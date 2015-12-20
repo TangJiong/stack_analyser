@@ -7,6 +7,13 @@ The project aims to find out what are the mostly asked questions every day and h
 The following diagram shows structure of the whole project. 
 
 ## Setup
+1. clone the project.
+2. install mongodb(skip if exists) and create database stack_db in mongodb.
+3. install mysql(skip if exists), create database stack_db, create table tag(id, tagname, tag_count, date) in stack_db.
+4. open the project with PyCharm, both stack_analyser and stack_spider.
+5. run the stack_spider to crawl questions from stackoverflow.
+6. run static_cache.py in stack_analyser to do some statistis and data transfer.
+7. run the stack_analyser for final result.
 
 [1]:http://stackoverflow.com "stckoverflow"
 [2]:http://scrapy.org/ "scrapy"
