@@ -4,7 +4,8 @@ A python Project for course Business Intelligent aims to analyse the questions i
 ## Introduction
 The project aims to find out what are the mostly asked questions every day and how they change with time in the famous Q&A site [stackoverflow][1]. Crawling all the questions is a quite simple job, as stackoverflow  has no anti-spider policy, so it's easy to get millions of questions with [scrapy][2]. However, it's not so easy to store so much data. As the data is in json format, so I choose [mongodb][3]. As for showing the analysis result, I use [flask][4] to build a simple web application, in which I make use of [highchats][5] to show the result in different graph and charts.
 
-The following diagram shows structure of the whole project. 
+The following diagram shows structure of the whole project.
+![structure][15] 
 
 ## Screenshot
 hottest topics
@@ -49,4 +50,4 @@ search
 [12]:/screen_shot/custom_search.png "the custom search page"
 [13]:/screen_shot/search_result.png "the search result page"
 [14]:/screen_shot/single_tag.png "the single tag page"
-
+[15]:/screen_shot/structure.png "structure diagram"
