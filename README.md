@@ -6,6 +6,26 @@ The project aims to find out what are the mostly asked questions every day and h
 
 The following diagram shows structure of the whole project. 
 
+## Screenshot
+hottest topics
+![screenshot][6]
+
+how much share they account for
+![screenshot][7]
+
+how the change with time
+![screenshot][8]
+
+custom analysis
+![screenshot][9]
+![screenshot][10]
+![screenshot][11]
+
+search
+![screenshot][12]
+![screenshot][13]
+![screenshot][14]
+
 ## Setup
 1. clone the project.
 2. install mongodb(skip if exists) and create database stack_db in mongodb.
@@ -20,4 +40,13 @@ The following diagram shows structure of the whole project.
 [3]:https://www.mongodb.org/ "mongodb"
 [4]:https://dormousehole.readthedocs.org/en/latest/ "flask"
 [5]:http://www.highcharts.com/ "highcharts"
+[6]:/screen_shot/index.png "the home page"
+[7]:/screen_shot/topshares.png "the top shares page"
+[8]:/screen_shot/toptrend.png "the top trend page"
+[9]:/screen_shot/custom.png "the custom analysis page"
+[10]:/screen_shot/custom_shares.png "the custom shares page"
+[11]:/screen_shot/custom_trend.png "the custom trend page"
+[12]:/screen_shot/custom_search.png "the custom search page"
+[13]:/screen_shot/search_result.png "the search result page"
+[14]:/screen_shot/single_tag.png "the single tag page"
 
